@@ -1,0 +1,61 @@
+<html>
+    <h1> About your Name</h1>
+    
+    <style>
+    .submitb1 {
+    box-shadow: 0px 10px 14px -7px #276873;
+      background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+      background-color:#599bb3;
+      border-radius:8px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Trebuchet MS;
+      font-size:12px;
+      font-weight:bold;
+      padding:13px 32px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #3d768a;
+  }
+  .submitb1:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+      background-color:#408c99;
+  }
+  .submitb1:active {
+    position:relative;
+      top:1px;
+  }
+    </style>
+    <head>
+<script type="text/javascript" src="name.js"></script>
+</head>
+
+<body id="textinfo"  onload="handleHTML()">
+    <div id="div1">
+    <img id="img1" src="download.jpg"/>
+    <form name="valid">
+        <br/>
+        
+    Name: <input type="text" id="names" pattern="/^[A-Za-z]+$/" required name="name" > <br/> <br/>
+
+    Result: <input type="text" name="result" > <br/> <br/>
+        <div class="cursor">
+        <input class= "submitb1" type="button" name="Submit" value ="Characters" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1" type="button" name="Submit" value ="lowercase" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1" type="button" name="Submit" value ="uppercase" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1" type="button" name="Submit" value ="replace" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1" id="buttons" type="button" name="Submit" value ="Number of Letter" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1" id="buttons" type="button" name="Submit" value ="Reverse your name" onclick="check(this)">  <br/> <br/>
+        <input  class= "submitb1"  type="button" id ="info" name="Submit" value ="Submit" onclick="check(this)">  <br/> <br/>
+        </div>
+        <input  class= "submitb1" type="button" value="create" onclick="handleCreate()"/>
+        </div>
+        <br/> 
+        
+      
+        
+    
+
+        </form>
+</body>
+</html>
